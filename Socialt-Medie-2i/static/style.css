@@ -138,9 +138,10 @@ a.button {
 
 #top_border ul li:first-child{
 	float:right;
-	text-decoration: none;
 	margin-right:93px;
 	margin-top:8px;
+	text-decoration: none;
+	display:block;
 }
 
 #top_border ul li:last-child{
@@ -203,8 +204,8 @@ a.button {
 .posts{
   border-top: 0;
   overflow: hidden;
-  width:500px;
-  height:550px;
+  width:550px;
+  height:610px;
   display:block;
   margin-left:auto;
   margin-right:auto;
@@ -212,16 +213,17 @@ a.button {
   box-shadow: 0px 6px 15px #00000029;
   border-radius: 14px;
   opacity: 1;
+  padding:0px 0px 0px 0px;
 }
 
-.posts img:nth-child(2){
-  width: 390px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:70px;
+.posts img:last-child{
+  width: 430px;
+  margin-top:80px;
   border-radius: 30px;
   overflow:auto;
   display: block;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .posts img:nth-child(3){
@@ -231,19 +233,23 @@ a.button {
 }
 
 .posts img:nth-child(4){
-  width: 30px;
+  width: 33px;
   padding:40px 10px 0px 0px;
 }
 
 .posts img:nth-child(5){
-  width: 30px;
+  width: 25px;
 }
 
 .posts img:nth-child(6){
   width: 30px;
   float:right;
   margin-right:60px;
-  padding:10px 10px 10px -30px;
+  margin-top:47px;
+}
+
+.author{
+	display:block;
 }
 
 .author img:first-child {
@@ -252,20 +258,23 @@ a.button {
 	margin-left:7px;
 	border:solid;
 	border-radius:100%;
-	margin-top:10px;
+	margin-top:12px;
 }
 
 .author_link {
 	font-size:20px;
-	margin-left:30px;
-	margin-top:20px;
+	float:right;
+	margin-top:22px;
+	margin-right:435px;
+	text-decoration: none;
+	color:black;
 }
 
 #all_posts{
     margin-left:auto;
     margin-right:auto;
     margin-top:150px;
-    padding:0px 0px 0px 10px;
+    padding:0px 10px 10px 120px;
 }
 
 #stories{
@@ -276,23 +285,30 @@ a.button {
 	border: 0.5px solid #707070C7;
 	border-radius: 21px;
 	opacity: 1;
-	margin-top:60px;
+	margin-top:17px;
 	float:right;
 	margin-right:160px;
 }
 
-#stories_tag{
-	float:right;
-	margin-top:22px;
-	margin-right:-78px;
+#stories img{
+	width:60px;
+	display:block;
+	border:solid #FDE77A;
+	border-radius:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:14px;
+	
 }
 
-# height: 100px;
-    width: 100px;
-    right: 0;
-    background-color: #a2a4a6;
-    overflow-x: hidden;
-    padding-top: 100px;
-    background: #68CAC4 0% 0% no-repeat padding-box;
-    border: 1px solid #000000;
+#stories p{
+	width:20px;
+	display:block;
+	margin-left:41px;
+}
+
+#stories_tag{
 	float:right;
+	margin-top:-20px;
+	margin-right:-78px;
+}

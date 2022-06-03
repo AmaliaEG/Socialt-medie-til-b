@@ -39,7 +39,18 @@ def show_posts(posts=[], user=None):
         with div (cls="empty"):
             p("")
         with div (id= 'stories'):
-            p("")
+            img(src=app.url_for('static', name='static', filename='images/stories.png'))
+            p("profil")
+            img(src=app.url_for('static', name='static', filename='images/stories.png'))
+            p("profil")
+            img(src=app.url_for('static', name='static', filename='images/stories.png'))
+            p("profil")
+            img(src=app.url_for('static', name='static', filename='images/stories.png'))
+            p("profil")
+            img(src=app.url_for('static', name='static', filename='images/stories.png'))
+            p("profil")
+            img(src=app.url_for('static', name='static', filename='images/stories.png'))
+            p("profil")
         with div (id='stories_tag'):
             p("Stories")
             
@@ -71,8 +82,8 @@ def show_posts(posts=[], user=None):
                         img(src=app.url_for('static', name='static', filename='images/comment.png'))
                         img(src=app.url_for('static', name='static', filename='images/save.png'))
                         img(src=app.url_for('static', name='static', filename='images/messages.png'))
-                with div(cls='empty'):
-                    p("")
+                        with div(cls='empty'):
+                            p("")
         
     return doc.render()
 
@@ -101,7 +112,7 @@ def create_image_page():
                 input_(type='file', name='image', accept='image/*')
             input_(type='submit', value='Post', cls='button')
 
-        with form(cls='post-form', method='POST', action='/post/text'):
+        """with form(cls='post-form', method='POST', action='/post/text'):
             with div(cls='post'):
                 input_(type='text', cls='title_inp',
                         name='title',
@@ -109,6 +120,6 @@ def create_image_page():
                 textarea(cls='contents_inp',
                             name='contents',
                             placeholder='Indtast tekst...')
-            input_(type='submit', value='Post', cls='button')
+            input_(type='submit', value='Post', cls='button')"""
 
     return doc.render()
